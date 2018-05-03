@@ -19,3 +19,8 @@ class Solution:
 					i = i - l[i]
 				val = max(val,m)
 		return val
+"""
+Something may be better than here.
+Just use the left and right pointers scanning the "s" from left to right and from right to left
+A beautiful solution!
+"""
