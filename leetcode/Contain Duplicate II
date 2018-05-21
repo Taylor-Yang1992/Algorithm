@@ -1,0 +1,15 @@
+class Solution:
+    
+    def containsNearbyDuplicate(self,nums,k):
+        if not nums or k == 0:
+            return False
+        d = {}
+        for (i,e) in enumerate(nums):
+            if not e in d:
+                d[e] = i
+            else:
+                if i - d[e] <= k:
+                    return True
+                else:
+                    d[e] = i
+        return False
